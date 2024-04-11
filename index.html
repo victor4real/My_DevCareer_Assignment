@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Onyenma Victor's Portfolio Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experiences">Job Experiences</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#skills">Other Skills</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #21232e;
+            color: 0;
+            padding: 0px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: 0;
+        }
+        .summary {
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .contact-form {
+            margin-top: 40px;
+        }
+        .contact-form input, .contact-form textarea, .contact-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .calculator {
+            margin-top: 40px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .calculator input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 18px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+        <div class="summary section">
+            <h2>Summary</h2>
+            <p>A passionate learner eager to explore new technologies and expand my skillset.</p>
+            <p>My goal is to gain a comprehensive understanding of web development.</p>
+        </div>
+        <div class="education section">
+            <h2>Education</h2>
+            <p> Higher National Diploma Degree in Computer Science - Nigerian Army College of Tech & Environmental Studies</p>
+            <p>Certification in Web Development - Zuri Training </p>
+        </div>
+        <div class="job-experiences section">
+            <h2>Job Experiences</h2>
+            <p>Nigerian Army (2014-Till date)</p>
+            
+        </div>
+        <div class="hobby section">
+            <h2>Hobby</h2>
+            <p>Photography, hiking, and playing guitar.</p>
+        </div>
+        <div class="other-skills section">
+            <h2>Other Skills</h2>
+            <p>JavaScript, Python, CSS frameworks (e.g., Bootstrap), Version control (Git), etc.</p>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="priority">Priority:</label>
+                    <select class="form-control" id="priority" name="priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="calculator container">
+        <h2>Calculator</h2>
+        <input type="text" class="form-control" id="calculator-screen" disabled>
+        <div class="buttons">
+            <!-- Add Bootstrap buttons -->
+            <button class="btn btn-secondary number">1</button>
+            <button class="btn btn-secondary number">2</button>
+            <button class="btn btn-secondary number">3</button>
+            <button class="btn btn-primary operator">+</button>
+            <br>
+            <button class="btn btn-secondary number">4</button>
+            <button class="btn btn-secondary number">5</button>
+            <button class="btn btn-secondary number">6</button>
+            <button class="btn btn-primary operator">-</button>
+            <br>
+            <button class="btn btn-secondary number">7</button>
+            <button class="btn btn-secondary number">8</button>
+            <button class="btn btn-secondary number">9</button>
+            <button class="btn btn-primary operator">*</button>
+            <br>
+            <button class="btn btn-danger clear">C</button>
+            <button class="btn btn-secondary number">0</button>
+            <button class="btn btn-primary operator">/</button>
+            <button class="btn btn-primary operator">%</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
